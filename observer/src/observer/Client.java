@@ -10,7 +10,6 @@ public class Client {
 		subject.setState(2);
 		BinaryObserver binary = new BinaryObserver(subject);
 		OctalObserver octal = new OctalObserver(subject);
-		HexaObserver hexa = new HexaObserver(subject);
 		Thread thread = new Thread(subject);
 		thread.start();
 		
